@@ -4,10 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -31,13 +28,15 @@ public class LearningFragment extends Fragment {
         View root = binding.getRoot();
         FrameLayout parentPage = root.findViewById(R.id.container);
         ConstraintLayout wdp = root.findViewById(R.id.wordDetailLayout);
-        ConstraintLayout wqp = root.findViewById(R.id.wordQuizLayout);
+        ConstraintLayout wqz2ep = root.findViewById(R.id.wordQuizLayoutZhToEn);
+        ConstraintLayout wqe2zp = root.findViewById(R.id.wordQuizLayoutEnToZh);
         FloatingActionButton fab = root.findViewById(R.id.nextFloatingActionButton);
-        wdp.setVisibility(View.INVISIBLE);
+        wqz2ep.setVisibility(View.INVISIBLE);
+        wqe2zp.setVisibility(View.INVISIBLE);
         fab.setOnClickListener(new View.OnClickListener() {
                                   @Override
                                   public void onClick(View v) {
-                                      wqp.setVisibility(View.VISIBLE);
+                                      wqz2ep.setVisibility(View.VISIBLE);
                                   }
                               }
         );

@@ -3,16 +3,157 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/wordDetailLayout">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="1234"></TextView>
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginRight="5pt"
+                    app:cardCornerRadius="3pt"
+                    android:clickable="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="3pt">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
 
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5pt"
+                                        android:text="sample"
+                                        android:textColor="#323232"
+                                        android:textSize="12pt" />
+
+                                    <ImageButton
+                                        android:layout_width="10pt"
+                                        android:layout_height="10pt"
+                                        android:layout_gravity="center"
+                                        android:background="#ffffff"
+                                        android:scaleType="fitCenter"
+                                        app:srcCompat="@drawable/ic_speak"
+                                        app:tint="#2E2E2E" />
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="n. 样品，样本\nv. 采样"
+                                    android:textColor="#454545"/>
+                            </LinearLayout>
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/floatingActionButton"
+                                android:backgroundTint="@color/purple_500"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                app:srcCompat="@drawable/ic_like"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2pt">
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/purple_100"
+                                android:text="4级单词"
+                                android:textColor="@color/purple_500">
+
+                            </com.google.android.material.chip.Chip>
+                            <com.google.android.material.chip.Chip
+                                android:backgroundTint="@color/purple_100"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6级单词"
+                                android:textColor="@color/purple_500">
+
+                            </com.google.android.material.chip.Chip>
+                        </com.google.android.material.chip.ChipGroup>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginRight="5pt"
+                    app:cardCornerRadius="3pt"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1234"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5pt"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginRight="5pt"
+                    app:cardCornerRadius="3pt"
+                    android:clickable="true">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1234"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginBottom="3pt"
+            android:layout_gravity="center">
+            <Button
+                android:layout_width="0pt"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="完全不认识"/>
+            <Button
+                android:layout_width="0pt"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="不熟，再看看"
+                android:layout_marginRight="2pt"
+                android:layout_marginLeft="2pt"/>
+            <Button
+                android:layout_width="0pt"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="会了，下一个"/>
+        </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,7 @@
         tools:context=".ui.learning.LearningFragment"
         android:id="@+id/container">
         <include layout="@layout/word_detail"/>
-        <include layout="@layout/word_quiz"/>
+        <include layout="@layout/word_quiz_zh2en"/>
+        <include layout="@layout/word_quiz_en2zh"/>
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
