@@ -24,12 +24,13 @@
                     android:layout_marginLeft="5pt"
                     android:layout_marginRight="5pt"
                     app:cardCornerRadius="3pt"
+
                     android:clickable="true">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_margin="3pt">
+                        android:layout_margin="5pt">
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -45,26 +46,27 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginRight="5pt"
+                                        android:layout_marginRight="8pt"
+                                        android:layout_gravity="center"
                                         android:text="sample"
                                         android:textColor="#323232"
                                         android:textSize="12pt" />
 
                                     <ImageButton
-                                        android:layout_width="10pt"
-                                        android:layout_height="10pt"
+                                        android:layout_width="8pt"
+                                        android:layout_height="8pt"
                                         android:layout_gravity="center"
                                         android:background="#ffffff"
                                         android:scaleType="fitCenter"
                                         app:srcCompat="@drawable/ic_speak"
                                         app:tint="#2E2E2E" />
-
                                 </LinearLayout>
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="n. 样品，样本\nv. 采样"
-                                    android:textColor="#454545"/>
+                                    android:textColor="#454545"
+                                    android:layout_marginTop="3pt"/>
                             </LinearLayout>
                             <com.google.android.material.floatingactionbutton.FloatingActionButton
                                 android:id="@+id/floatingActionButton"
@@ -111,7 +113,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_margin="3pt">
+                        android:layout_margin="5pt">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -142,7 +144,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_margin="3pt">
+                        android:layout_margin="5pt">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

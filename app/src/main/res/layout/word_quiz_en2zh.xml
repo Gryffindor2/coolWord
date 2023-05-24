@@ -42,7 +42,7 @@
             android:tint="@color/white"
             android:clickable="true"
             app:fabCustomSize="35pt"
-            app:backgroundTint="#5600D0"
+            app:backgroundTint="@color/purple_500"
             app:fabSize="normal"
             app:srcCompat="@drawable/ic_confirm" />
         <TextView
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="#C3C3C3"
+            android:textColor="@color/gray_400"
             android:text="查看答案"
             android:textAlignment="center"/>
 
