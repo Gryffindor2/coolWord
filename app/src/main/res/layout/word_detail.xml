@@ -107,23 +107,97 @@
                     android:layout_marginRight="5pt"
                     app:cardCornerRadius="3pt"
                     android:clickable="true">
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="1234"/>
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="3pt">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="释义"
+                            android:textColor="#323232"
+                            android:textSize="12pt"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="v.+n.use sample, send sample, take sample, provide sample, give sample\n\nadj.+n.small sample, large sample, free sample, representative sample, random sample"
+                            android:textSize="8pt"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:text="《某词典》"
+                            android:gravity="right"/>
+                    </LinearLayout>
+
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5pt"
-                    android:layout_marginLeft="5pt"
-                    android:layout_marginRight="5pt"
+                    android:layout_margin="5pt"
                     app:cardCornerRadius="3pt"
                     android:clickable="true">
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="1234"/>
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="3pt">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12pt"
+                            android:textColor="#323232"
+                            android:text="例句"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The impurity elements on the surface of the silicon sample corroded were analyzed by an energy dispersive spectroscope."
+                            android:textSize="8pt"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="8pt"
+                            android:text="用能谱仪对腐蚀后的硅表层杂质元素进行分析；"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:text="《Inorganic Chemistry》"
+                            android:gravity="right"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The impurity elements on the surface of the silicon sample corroded were analyzed by an energy dispersive spectroscope."
+                            android:textSize="8pt"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="8pt"
+                            android:text="用能谱仪对腐蚀后的硅表层杂质元素进行分析；"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:text="《Inorganic Chemistry》"
+                            android:gravity="right"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The impurity elements on the surface of the silicon sample corroded were analyzed by an energy dispersive spectroscope."
+                            android:textSize="8pt"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="8pt"
+                            android:text="用能谱仪对腐蚀后的硅表层杂质元素进行分析；"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3pt"
+                            android:text="《Inorganic Chemistry》"
+                            android:gravity="right"/>
+                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
         </ScrollView>
@@ -139,19 +213,23 @@
             <Button
                 android:layout_width="0pt"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="30pt"
+                android:backgroundTint="@color/gray_200"
+                android:textColor="@color/gray_600"
                 android:text="完全不认识"/>
             <Button
                 android:layout_width="0pt"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="30pt"
+                android:backgroundTint="@color/purple_100"
+                android:textColor="@color/purple_500"
                 android:text="不熟，再看看"
                 android:layout_marginRight="2pt"
                 android:layout_marginLeft="2pt"/>
             <Button
                 android:layout_width="0pt"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="30pt"
                 android:text="会了，下一个"/>
         </LinearLayout>
     </LinearLayout>
